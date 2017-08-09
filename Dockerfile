@@ -5,7 +5,7 @@ ENV LANG=C.UTF-8 \
     JAVA_UPDATE=131 \
     JAVA_BUILD=11 \
     JAVA_PACKAGE=server-jre \
-    JAVA_HOME="/usr/lib/java"
+    JAVA_HOME="/usr/lib/jvm/default-jvm"
 
 RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates && \
     apk add --no-cache bash && \
